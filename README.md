@@ -1,4 +1,4 @@
-# Case Omie — Analista de Dados (Growth)
+# Case Omie
 
 Análise de performance de canais de marketing e campanhas pagas da Omie ao longo de 2022, com foco em funil de conversão, eficiência de investimento e sazonalidade.
 
