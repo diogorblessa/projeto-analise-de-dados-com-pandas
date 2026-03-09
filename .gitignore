@@ -1,0 +1,4 @@
+.venv/
+.ipynb_checkpoints/
+.pip-tools-cache/
+__pycache__/
