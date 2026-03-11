@@ -12,7 +12,7 @@ Análise de performance de canais de marketing e campanhas pagas da Omie ao long
 - Correlação investimento x conversões (Pearson + Spearman)
 - Robustez de correlações com outliers
 - Análise Pareto e evolução mensal de eficiência
-- Insights e recomendações com dados concretos
+- Síntese analítica e recomendações com dados concretos
 
 ## Análises futuras (não executadas)
 
@@ -48,43 +48,13 @@ Estas frentes não foram executadas neste case. Elas representam um roadmap anal
 | PASSO 2: correlação entre investimento e CPL | `11.2` |
 | PASSO 2: correlação entre Search e Direto (efeito halo) | `11.3` |
 | PASSO 2: robustez das correlações com outliers | `11.4` |
-| Síntese para apresentação | `13`, `14`, `15`, `16` |
+| Síntese para apresentação | `13`, `14`, `15` |
 
 Nota: `PASSO 1` e `PASSO 2` são rótulos do enunciado original do desafio. As respostas já estão executadas nas etapas indicadas do notebook, e o `PASSO 2` está coberto nas subetapas `11.1` a `11.4`.
 
 ## Como executar
 
-### Pré requisitos rápidos
-
-- Python `3.11+`
-- Bash disponível
-- Internet para a etapa de câmbio via PTAX
-
-Checagem rápida de ambiente:
-
-```bash
-python3 --version
-python --version
-bash --version
-```
-
-No Windows, use Git Bash ou WSL.
-
-### Opção rápida
-
-No Bash, dentro da raiz do projeto:
-
-```bash
-bash ./scripts/setup_and_open.sh
-bash ./scripts/run_notebook.sh
-```
-
-| Script | Quando usar | O que faz |
-| --- | --- | --- |
-| `setup_and_open.sh` | Primeira execução | Cria ou reutiliza `.venv`, instala dependências, registra kernel e abre `case_omie.ipynb` |
-| `run_notebook.sh` | Execuções recorrentes | Reaproveita ambiente já preparado e abre o notebook principal |
-
-### Opção manual (opcional)
+**Pré-requisitos:** Python `3.11+` e internet (para a etapa de câmbio via PTAX).
 
 1. Criar e ativar ambiente virtual.
 
@@ -95,7 +65,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Git Bash no Windows:
+Windows (Git Bash):
 
 ```bash
 python -m venv .venv
@@ -109,44 +79,23 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-3. Abrir notebook.
+3. Abrir o notebook.
 
 ```bash
 python -m jupyter notebook case_omie.ipynb
 ```
 
-## Resultado esperado
-
-Após executar `bash ./scripts/setup_and_open.sh`:
-
-- ambiente virtual `.venv` criado ou reutilizado
-- dependências instaladas a partir de `requirements.txt`
-- notebook `case_omie.ipynb` aberto no Jupyter
-
 No Jupyter, selecione o kernel da venv ativa e execute `Run All`.
-
-## Troubleshooting
-
-| Sintoma | Causa provável | Como resolver |
-| --- | --- | --- |
-| `bash: command not found` | Bash não está no PATH do terminal atual | No Windows, abrir Git Bash ou WSL. Alternativamente, executar `"C:\\Program Files\\Git\\bin\\bash.exe" ./scripts/setup_and_open.sh` |
-| Kernel não aparece no Jupyter | Kernel não registrado na sessão atual | Linux e macOS: `./.venv/bin/python -m ipykernel install --user --name desafio-omie --display-name "Python (desafio-omie)"`; Git Bash: `./.venv/Scripts/python.exe -m ipykernel install --user --name desafio-omie --display-name "Python (desafio-omie)"` |
-| `ModuleNotFoundError` ao abrir o notebook | Dependências não instaladas no ambiente ativo | Rodar novamente `bash ./scripts/setup_and_open.sh` |
-| Falha na etapa PTAX | API do Banco Central indisponível no momento | Tentar novamente após alguns minutos; etapa depende de internet |
 
 ## Estrutura do projeto
 
 ```
 desafio_omie/
 ├── case_omie.ipynb        # Notebook principal da análise
-├── requirements.txt       # Dependências lockadas (pip-compile)
-├── requirements.in        # Dependências fonte (restrições >=)
-├── docs/
-│   ├── data.csv           # Dados de métricas por campanha
-│   └── campaigns.csv      # Dicionário de campanhas
-└── scripts/
-    ├── setup_and_open.sh  # Setup completo + abre Jupyter (Bash)
-    └── run_notebook.sh    # Abre Jupyter com ambiente existente (Bash)
+├── requirements.txt       # Dependências Python
+└── docs/
+    ├── data.csv           # Dados de métricas por campanha
+    └── campaigns.csv      # Dicionário de campanhas
 ```
 
 ## Licença
