@@ -113,9 +113,10 @@ No Jupyter, selecione o kernel da venv ativa e execute `Run All`.
 | PASSO 2: correlação entre investimento e apps pagos | `11.1` |
 | PASSO 2: correlação entre investimento e CPL | `11.2` |
 | PASSO 2: correlação entre Search e Direto (efeito halo) | `11.3` |
+| PASSO 2: robustez das correlações com outliers | `11.4` |
 | Síntese para apresentação | `13`, `14`, `15`, `16` |
 
-Nota: `PASSO 1` e `PASSO 2` são rótulos do enunciado original do desafio. As respostas já estão executadas nas etapas indicadas do notebook.
+Nota: `PASSO 1` e `PASSO 2` são rótulos do enunciado original do desafio. As respostas já estão executadas nas etapas indicadas do notebook, e o `PASSO 2` está coberto nas subetapas `11.1` a `11.4`.
 
 ## Troubleshooting
 
