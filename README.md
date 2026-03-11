@@ -129,10 +129,28 @@ Nota: `PASSO 1` e `PASSO 2` são rótulos do enunciado original do desafio. As r
 
 ## Dados e premissas
 
-- Período analisado: `2022` (`12` meses)
+- Período analisado: Janeiro a Dezembro de 2022
 - Fontes de dados: `docs/data.csv` e `docs/campaigns.csv`
 - A análise de correlação é usada para identificar relação entre variáveis, não para provar causalidade
 - Conversão cambial EUR → BRL realizada via API PTAX por data de referência
+
+
+
+### Análises futuras (não executadas)
+
+Estas frentes não foram executadas neste case. Elas representam um roadmap analítico para evolução da decisão de negócio.
+
+**Viável com dados atuais**
+- `ROAS` (`faturamento / investimento`): há dados de `faturamento` e `investimento` para construir leitura de retorno por canal.
+- `CAC`: pode ser derivado da estrutura atual de aquisição, desde que a empresa defina o evento padrão de aquisição para reporte.
+- `Modelagem preditiva` (exploratória): possível com a base atual, com ressalva de janela curta de `12` meses.
+
+**Depende de dados adicionais ou desenho experimental**
+- `Cohort`: requer identificador individual (`lead_id` ou `cliente_id`) e linha do tempo por lead.
+- `Teste A/B`: requer randomização, grupo de controle e protocolo experimental.
+- `Atribuição multi touch`: requer trilha de interações por usuário ao longo da jornada.
+- `LTV` e `LTV vs CAC`: requer histórico por cliente com retenção, receita recorrente e churn.
+
 
 ## Estrutura do projeto
 
