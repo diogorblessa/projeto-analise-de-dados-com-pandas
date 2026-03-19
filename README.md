@@ -1,6 +1,6 @@
-# Case Omie
+# Resolução do projeto:
 
-Análise de performance de canais de marketing e campanhas pagas da Omie ao longo de 2022, com foco em funil de conversão, eficiência de investimento e sazonalidade.
+Análise de performance de canais de marketing e campanhas pagas de um sistema de gestão empresarial (ERP) 100% em nuvem que integra finanças, vendas, estoque e serviços para otimizar a operação de PMEs e grandes empresas.   ao longo de 2022, com foco em funil de conversão, eficiência de investimento e sazonalidade. Os dados são fictícios.
 
 ## O que o notebook cobre
 
