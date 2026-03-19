@@ -1,6 +1,6 @@
-# Resolução do projeto:
+# Contexto do projeto:
 
-Análise de performance de canais de marketing e campanhas pagas de um sistema de gestão empresarial (ERP) 100% em nuvem que integra finanças, vendas, estoque e serviços para otimizar a operação de PMEs e grandes empresas.   ao longo de 2022, com foco em funil de conversão, eficiência de investimento e sazonalidade. Os dados são fictícios.
+Análise de performance de canais de marketing e campanhas pagas de um sistema de gestão empresarial (ERP) 100% em nuvem, com foco em funil de conversão, eficiência de investimento e sazonalidade ao longo de 2022. Os dados deste projeto são fictícios.
 
 ## O que o notebook cobre
 
@@ -82,7 +82,7 @@ python -m pip install -r requirements.txt
 3. Abrir o notebook.
 
 ```bash
-python -m jupyter notebook case_omie.ipynb
+python -m jupyter notebook case_projeto_analise_dados.ipynb
 ```
 
 No Jupyter, selecione o kernel da venv ativa e execute `Run All`.
@@ -90,8 +90,8 @@ No Jupyter, selecione o kernel da venv ativa e execute `Run All`.
 ## Estrutura do projeto
 
 ```
-desafio_omie/
-├── case_omie.ipynb        # Notebook principal da análise
+projeto-analise-de-dados-com-pandas/
+├── case_projeto_analise_dados.ipynb        # Notebook principal da análise
 ├── requirements.txt       # Dependências Python
 └── docs/
     ├── data.csv           # Dados de métricas por campanha
